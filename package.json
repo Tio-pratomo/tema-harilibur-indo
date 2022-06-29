@@ -1,0 +1,16 @@
+{
+    "name": "project-harilibur-indonesia",
+    "version": "1.0.0",
+    "description": "halaman untuk membuat aplikasi dengan tema hari libur",
+    "source": "./pages/*.html",
+    "scripts": {
+        "dev": "parcel",
+        "built": "parcel build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel": "^2.6.2"
+    }
+}
