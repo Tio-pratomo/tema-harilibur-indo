@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** 
+ * BAGIAN SPLIT LANDING PAGE
+ **/
+
+body {
+    overflow: hidden;
+    font-family: 'Exo', sans-serif;
+}
+
+.main-landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #333;
+}
+
+
+.main-landing__split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+.js--hover-left .main-landing__split--left {
+    width: 70%;
+    z-index: 1;
+}
+
+.js--hover-left .main-landing__split--right {
+    width: 30%;
+}
+
+.js--hover-right .main-landing__split--left {
+    width: 30%;
+}
+
+.js--hover-right .main-landing__split--right {
+    width: 70%;
+    z-index: 1;
+}
+
+
+.main-landing__split__title {
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.main-landing__split__btn {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-landing__split__btn--left:hover {
+    background-color: rgb(67, 64, 255);
+    border-color: rgb(67, 64, 255);
+}
+
+.main-landing__split__btn--right:hover {
+    background-color: rgb(28, 122, 28);
+    border-color: rgb(28, 122, 28);
+}
+
+.main-landing__split--left {
+    left: 0;
+    background: url("../images/banner/digimon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    transition: width 1s;
+}
+
+.main-landing__split--left::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 84, 236, 0.7);
+    transition: width 1s;
+}
+
+.main-landing__split--right {
+    right: 0;
+    background: url("../images/banner/mobile-legend.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    transition: width 1s;
+
+}
+
+.main-landing__split--right::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.8);
+}
+
+@media(max-width: 800px) {
+    .main-landing__split__title {
+        font-size: 1.3rem;
+        top: 30%;
+    }
+
+    .main-landing__split__btn {
+        width: 10rem;
+        font-size: .8rem;
+        white-space: normal;
+    }
+}
