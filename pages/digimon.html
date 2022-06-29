@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- 
+        *LINK KE CSS FILE
+     -->
+        <link rel="stylesheet" href="../assets/CSS/bootstrap.min.css" />
+        <link rel="stylesheet" href="../assets/CSS/digimon.css" />
+    </head>
+    <body data-page="digimon">
+        <div class="container-fluid background-box">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="digimon__title">selamat datang di digimon arena</h2>
+                    <p class="digimon__text">
+                        terima kasih kepada kalian yang mengunjungi website ini. pada halaman ini sederhana, kami
+                        menyediakan tampilan beberapa karakter digimon. kalian juga memfilter pencarian dengan memilih
+                        level yang ada pada kolom pilihan, setelah itu kalian klik tombol search untuk menampilkan
+                        digimon berdasarkan data
+                    </p>
+                    <p class="digimon__text">
+                        alasan author membuat halaman ini yaitu ingin bernostalgia waktu zaman sekolah dasar. dimana
+                        pada hari minggu yang tentunya hari libur, menyempatkan nonton digimon di indosiar. sekarang ini
+                        , tidak ada lagi acara televisi seperti itu, paling-paling yang ramai ditonton acara gosip dan
+                        sinetron.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group my-3">
+                    <select class="form-select" id="level-digimon">
+                        <option value="" selected>Pilih Level Digimon</option>
+                        <option value="In Training">In Training</option>
+                        <option value="Fresh">Fresh</option>
+                        <option value="Rookie">Rookie</option>
+                        <option value="Champion">Champion</option>
+                        <option value="Ultimate">Ultimate</option>
+                        <option value="Mega">Mega</option>
+                        <option value="Armor">Armor</option>
+                    </select>
+                    <button id="digimon-search" class="btn btn-success" type="button">Search</button>
+                </div>
+            </div>
+            <div class="row digimon-char">
+                <!-- tampilan karakter digimon -->
+            </div>
+        </div>
+
+        <script type="module" src="../assets/JS/main.js"></script>
+    </body>
+</html>
