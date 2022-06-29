@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&display=swap');
+
+/* 
+*SECTION HALAMAN DIGIMON
+*/
+
+.background-box {
+    background-color: #333;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 5rem;
+}
+
+.digimon__title {
+    font-size: 2.125rem;
+}
+
+.digimon__text {
+    font-size: 1.125rem;
+}
+
+@media(max-width: 800px) {
+    .background-box {
+
+        padding: 3rem;
+    }
+
+}
