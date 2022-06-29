@@ -29,7 +29,9 @@ function getDataML(id = '') {
             method: 'get',
             headers: {
                 accept: 'application/json',
+                'Access-Control-Allow-Origin': '*',
             },
+            mode: 'no-cors',
         });
     }
 
