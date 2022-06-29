@@ -11,25 +11,22 @@
         -->
         <link rel="stylesheet" href="../assets/CSS/bootstrap.min.css" />
     </head>
-    <body>
+    <body data-page="mobile-legend">
         <div class="container-fluid p-5">
             <div class="row">
-                <div class="col-md">
+                <div class="col-md-12">
                     <h1 class="text-center mb-5 main-title">
                         Welcome to Mobile Legend :
                         <br />
                         Bang-Bang
                     </h1>
                     <p class="text-start">
-                        Hallo Apa kabar. Ini merupakan project menggunakan API public orang lain untuk menampilkan data
-                        para hero mobile legend. Jika kalian click gambar heronya, akan muncul detail dari ability
-                        effect, difficulty, durability dan offence dari hero tersebut. Pastinya kalian sudah tau Mobile
-                        Legend. Mobile legend adalah permainan konsol 5 vs 5 pada platform OS IOS maupun Android. Kalian
-                        dapat memainkannya bersama teman maupun main solo (sendiri). Untuk main sendiri kita tahu banyak
-                        kendala seperti teman team yang feeder,
-                        <em>trolling</em>
-                        dan AFK. Kalian juga akan mendapatkan banyak hadiah dan privilage, jika kalian membeli starlight
-                        membernya.
+                        Hallo Apa kabar. Ini merupakan project untuk menampilkan data para hero mobile legend. Jika
+                        kalian click gambar heronya, akan muncul detail dari ability effect, difficulty, durability dan
+                        offence dari hero tersebut. Pastinya kalian sudah tau Mobile Legend. Mobile legend adalah
+                        permainan konsol 5 vs 5 pada platform OS IOS maupun Android. Pada waktu senggang atau pun hari
+                        libur, Kalian dapat memainkannya bersama teman maupun main solo (sendiri). Kalian juga akan
+                        mendapatkan banyak hadiah dan privilage, jika kalian membeli starlight membernya.
                     </p>
                     <p>Jika kalian belum punya gamenya bisa di download gamenya pada tombol di bawah ini :</p>
                     <div class="row">
@@ -38,8 +35,10 @@
                                 href="https://play.google.com/store/apps/details?id=com.mobile.legends&utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-id-1003227-med-hasem-gm-Evergreen-Oct0121-Text_Search_SKWS-SKWS%7cONSEM_kwid_43700058146369592_creativeid_490148464283_device_c&gclid=EAIaIQobChMI5tG5obfR8wIV-5VLBR3ZZAfDEAAYASAAEgJFhfD_BwE&gclsrc=aw.ds"
                                 class="btn btn-success"
                             >
-                                <i class="fab fa-google-play me-2"></i>
-                                Playstore
+                                <span class="d-flex">
+                                    <box-icon type="logo" name="google" color="#fff" class="me-1"></box-icon>
+                                    playstore
+                                </span>
                             </a>
                         </div>
                         <div class="col-md-3 col-lg-2 mt-3 mt-md-0">
@@ -47,13 +46,35 @@
                                 href="https://apps.apple.com/us/app/mobile-legends-bang-bang/id1160056295"
                                 class="btn btn-dark"
                             >
-                                <i class="fab fa-apple me-2"></i>
-                                App Store
+                                <span class="d-flex">
+                                    <box-icon type="logo" name="apple" color="#fff" class="me-1"></box-icon>
+                                    appstore
+                                </span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row mt-5 px-2 card-mobile-legend">
+                <!-- karakter hero -->
+            </div>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="hero" tabindex="-1" aria-labelledby="hero" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex justify-content-evenly mb-5">
+                        <!-- karakter hero -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../assets/JS/bootstrap.bundle.min.js"></script>
+        <script type="module" src="../assets/JS/main.js"></script>
     </body>
 </html>

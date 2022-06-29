@@ -1,7 +1,11 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import 'boxicons';
+
 import { showDisplayDigimonCard, showFilteringDigimonCard } from './data/digimonAPI.js';
 import { hoverEffect } from './utility/hover-effect.js';
+import { showCardDetail, showCardML } from './data/mobile-legend-API.js';
 
 const getPages = document.body.dataset.page;
 
@@ -41,5 +45,17 @@ switch (getPages) {
             document.querySelector('#digimon-search'),
             document.querySelector('#level-digimon')
         );
+        break;
+    case 'mobile-legend':
+        /*
+         *INIT AOS
+         */
+        AOS.init({
+            delay: 800,
+        });
+
+        showCardML(document.querySelector('.card-mobile-legend'));
+
+        showCardDetail(document.querySelector('.modal-body'));
         break;
 }
