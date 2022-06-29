@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "dev": "parcel pages/*.html",
-        "build": "rm -r dist && parcel build pages/*.html"
+        "build": "parcel build pages/*.html"
     },
     "keywords": [],
     "author": "",
