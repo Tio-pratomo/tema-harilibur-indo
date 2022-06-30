@@ -45,15 +45,4 @@ switch (getPages) {
             document.querySelector('#level-digimon')
         );
         break;
-    case 'mobile-legend':
-        /*
-         *INIT AOS
-         */
-        AOS.init({
-            delay: 800,
-        });
-
-        showCardML(document.querySelector('.card-mobile-legend'));
-
-        break;
 }
