@@ -5,7 +5,6 @@ import 'boxicons';
 
 import { showDisplayDigimonCard, showFilteringDigimonCard } from './data/digimonAPI.js';
 import { hoverEffect } from './utility/hover-effect.js';
-import { showCardDetail, showCardML } from './data/mobile-legend-API.js';
 
 const getPages = document.body.dataset.page;
 
