@@ -56,6 +56,5 @@ switch (getPages) {
 
         showCardML(document.querySelector('.card-mobile-legend'));
 
-        showCardDetail(document.querySelector('.modal-body'));
         break;
 }
